@@ -17,7 +17,7 @@ export default class NavbarMain extends Component {
   render() {
     return (
       <div>
-        <Navbar color="faded" light toggleable>
+        <Navbar color="inverse" inverse toggleable>
           <NavbarToggler right onClick={this.toggle} />
           <NavbarBrand href="/">Registration Mail Chimp</NavbarBrand>
           <Collapse isOpen={this.state.isOpen} navbar>

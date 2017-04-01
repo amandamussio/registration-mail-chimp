@@ -11,8 +11,8 @@ class Home extends Component {
 			        <p className="lead">App feito para facilitar o endomarketing da empresa, cadastrando, alterando e excluindo 
 			        funcionários do MailChimp, e podendo consultar os aniversáriantes do mês</p>
 			        <hr className="my-2" />
-			       		<Link className="btn btn-primary" to="registration">Cadastros</Link>{' '}
-			          	<Link className="btn btn-warning" to="registration">Aniversariantes do mês</Link>
+			       	<Link className="btn btn-primary" to="registration">Cadastros</Link>{' '}
+			        <Link className="btn btn-warning" to="registration">Aniversariantes do mês</Link>
 				</Jumbotron>
 			</div>
 		);

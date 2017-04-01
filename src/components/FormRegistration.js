@@ -1,30 +1,69 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Row, Col, Button, Form, FormGroup, Label, FormText } from 'reactstrap';
 
-
-const FormRegistration = () => (
+const FormRegistration = (props) => (
 	<form>
-		<FormGroup>
-          <Label for="firstName">Primeiro Nome</Label>
-          <Input type="text" name="firstName" id="firstName" placeholder="Digite o primeiro nome" />
-        </FormGroup>
-        <FormGroup>
-          <Label for="lastName">Último Nome</Label>
-          <Input type="text" name="lastName" id="lastName" placeholder="Digite o último nome" />
-        </FormGroup>
+        <Row>
+          <Col md={6}>
+              <FormGroup>
+                <Label for="firstName">Primeiro Nome</Label>
+                <input
+                className="form-control" 
+                type="text" 
+                name="firstName" 
+                id="firstName" 
+                value={props.firstName}
+                onChange={props.change}
+                />
+              </FormGroup>
+          </Col>
+          <Col md={6}>
+            <FormGroup>
+              <Label for="lastName">Último Sobrenome</Label>
+              <input 
+              className="form-control" 
+              type="text" 
+              name="lastName" 
+              id="lastName" 
+              value={props.lastName}
+              onChange={props.change}
+              />
+            </FormGroup>
+          </Col>
+        </Row>
+		    
         <FormGroup>
           <Label for="email">Email</Label>
-          <Input type="email" name="email" id="email" placeholder="email@email.com" />
+          <input
+          className="form-control" 
+          type="email" 
+          name="email" 
+          id="email" 
+          value={props.email}
+          onChange={props.change} />
         </FormGroup>
         <FormGroup>
           <Label for="birth">Setor</Label>
-          <Input type="text" name="session" id="session" placeholder="Setor de trabalho" />
+          <input
+          className="form-control" 
+          type="text" 
+          name="session" 
+          id="session" 
+          value={props.session}
+          onChange={props.change} />
         </FormGroup>
         <FormGroup>
           <Label for="birth">Data de Aniversário</Label>
-          <Input type="date" name="birth" id="birth" placeholder="DD/MM" />
+          <input
+          className="form-control" 
+          type="date" 
+          name="birth" 
+          id="birth" 
+          value={props.birth}
+          onChange={props.change}
+          />
         </FormGroup>
-        <Button>Enviar</Button>
+        <Button color="success">Enviar</Button>
 	</form>
 );
 
