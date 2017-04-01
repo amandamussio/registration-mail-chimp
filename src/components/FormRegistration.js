@@ -63,7 +63,7 @@ const FormRegistration = (props) => (
           onChange={props.change}
           />
         </FormGroup>
-        <Button color="success">Enviar</Button>
+        <Button onClick={props.submit} color="success">Enviar</Button>
 	</form>
 );
 

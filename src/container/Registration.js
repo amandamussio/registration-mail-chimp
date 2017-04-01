@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import FormRegistration from '../components/FormRegistration.js';
 
 class Registration extends Component {
@@ -20,7 +21,8 @@ class Registration extends Component {
 		})
 	}
 
-	handleSubmit() {
+	handleSubmit(event) {
+		event.preventDefault();
 		console.log(this.state)
 	}
 
@@ -36,10 +38,15 @@ class Registration extends Component {
 				session={this.state.session}
 				birth={this.state.birth} 
 				change={this.handleChange.bind(this)} 
+				submit={this.handleSubmit.bind(this)}
 				/>
 			</div>
 		)
 	}
 }
 
-export default Registration;
+const mapStateToProps = (state) => ({
+
+})
+
+export default connect ()(Registration);
