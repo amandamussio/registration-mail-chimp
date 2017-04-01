@@ -1,3 +1,3 @@
 # registration-mail-chimp
 
-# Cadastros utilizando API do MailChimp
+### Cadastros utilizando API do MailChimp
