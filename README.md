@@ -1,4 +1,4 @@
-#Registration Mail Chimp
+# Registration Mail Chimp
 
 Projeto criado com react, para cadastros de funcionários, utilizando a API do MailChimp
 
